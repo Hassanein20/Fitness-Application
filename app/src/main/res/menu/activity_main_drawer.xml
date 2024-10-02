@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group
+        android:checkableBehavior="single">
+    <!--can't click more than one option like the radio button-->
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_ingredients"
+            android:icon="@drawable/ingredients_icon"
+            android:title="@string/menu_ingredients" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting_icon"
+            android:title="@string/setting" />
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout_icon"
+                android:title="@string/logout"/>
+        </menu>
+    </item>
+
+</menu>
